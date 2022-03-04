@@ -1,0 +1,456 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.color--white {
+  color: #ffffff !important;
+}
+
+.color--secondary {
+  color: #57acf9 !important;
+}
+
+.navbar {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #e5e9f2;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.custom-container--fluid {
+  padding: 6px 16px;
+}
+
+.custom-navbar.navbar-light .navbar-nav .nav-link.nav-link {
+  color: #0b283f;
+  font: normal normal 500 14px/1.4em "Inter", sans-serif;
+}
+
+.custom-navbar.navbar-light .navbar-nav .nav-link.active,
+.custom-navbar.navbar-light .navbar-nav .show > .nav-link {
+  font-weight: 700;
+}
+
+.custom-navbar.navbar-light .navbar-nav .nav-link.btn-primary {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #57acf9;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  border-color: #57acf9;
+  font-size: 16px;
+  padding: 12px 32px;
+}
+
+h1 {
+  font: normal normal 800 32px/1.2em "Inter", sans-serif;
+  color: #0b283f;
+}
+
+.hero-section {
+  background: url("../assets/img/hero-section.svg") no-repeat right center,
+    linear-gradient(180deg, #ffffff 21.84%, #eff7ff 100%);
+}
+
+.hero-content {
+  max-width: 540px;
+}
+
+.hero-content__title {
+  margin-bottom: 16px;
+}
+
+.hero-content__subtitle {
+  margin-bottom: 32px;
+}
+
+.hero-section__right {
+}
+
+h4 {
+  font: normal normal 500 20px/1.5em "Inter", sans-serif;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+}
+
+.section {
+  padding: 84px 0;
+  text-align: center;
+}
+
+h2 {
+  font: normal normal 700 36px/44px "Inter", sans-serif;
+}
+
+.section__title {
+  letter-spacing: -0.02em;
+  color: #0b283f;
+}
+
+.section--ai {
+  padding: 112px 0 86px;
+}
+
+.section--ai .section__title {
+  max-width: 774px;
+  margin: 0 auto;
+}
+
+.section__description {
+  font: normal normal 500 18px/22px "Inter", sans-serif;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+  margin: 20px auto;
+}
+
+.section--ai .section__description {
+  max-width: 418px;
+}
+
+.section__image-wrapper {
+  margin-top: 124px;
+}
+
+.section--manual-ar-process {
+  background: #eff7ff;
+  padding-bottom: 216px;
+}
+
+.secondary-color {
+  color: #57acf9;
+}
+
+.manual-ar-process-illustration-wrapper {
+  margin: 56px auto 86px;
+}
+
+h3 {
+  font: normal normal 600 24px/1.2em "Inter", sans-serif;
+}
+
+.process-illustrator {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.process-illustrator__title {
+  font-feature-settings: "salt" on, "liga" off;
+  color: #57acf9;
+  max-width: 192px;
+  margin: 0 auto;
+}
+
+.process-illustrator__title--sm {
+  max-width: 140px;
+}
+
+.stepper-wrapper {
+  text-align: center;
+}
+
+.stepper {
+  text-align: center;
+}
+
+.stepper__indicator {
+  background: #0b283f;
+  border-radius: 4px;
+  font: normal normal 500 18px/22px "Inter", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 18px;
+  max-width: 98px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.stepper__indicator::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 240px;
+  background: #0b283f;
+  top: 50%;
+  margin-left: 16px;
+}
+
+.stepper:last-child .stepper__indicator::after {
+  display: none;
+}
+
+.stepper__title {
+  font-weight: 700;
+}
+
+.stepper__description {
+  font: normal normal 500 18px/22px "Inter", sans-serif;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+  max-width: 192px;
+  margin: 0 auto;
+}
+
+.section--platform {
+  background: #0b283f;
+}
+
+.section--platform__shape-wrapper {
+  background: url("../assets/img/shape.svg") no-repeat;
+}
+
+.section--platform .section__image-wrapper {
+  margin-top: 58px;
+}
+
+.section--stat .section__title {
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+}
+
+.stat__title {
+  font: normal normal 700 48px/58px "Inter", sans-serif;
+  text-align: left;
+  text-transform: capitalize;
+  color: #57acf9;
+  margin: 26px auto 16px;
+}
+
+.stat__description {
+  font: normal normal 700 24px/26px "Inter", sans-serif;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #0b283f;
+}
+
+.stat-details {
+  margin-left: 28px;
+}
+
+.card {
+  padding: 56px 112px 70px;
+  background: #ffffff;
+  border-radius: 10px;
+  max-width: 860px;
+  margin: 0 auto;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  border: 0;
+}
+
+.customer-section__title {
+  color: #57acf9;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.customer-section__description {
+  font: normal normal 500 20px/32px "Inter", sans-serif;
+  text-align: left;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+  max-width: 528px;
+}
+
+.down-arch-icon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.person__img-wrapper {
+  margin-bottom: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.person-details {
+  margin-left: 24px;
+}
+
+.person__name {
+  font: normal normal 700 18px/22px "Inter", sans-serif;
+  text-align: left;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+}
+
+.person__company-designation {
+  font: normal normal normal 14px/18px "Inter", sans-serif;
+  text-align: left;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+}
+
+.section--physician-support {
+  padding: 68px 0 120px;
+  background: #eff7ff;
+}
+
+.carousel {
+  max-width: 862px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+}
+
+.portfolio-item__img-wrapper {
+  width: 190px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.portfolio-item {
+  margin-right: 34px;
+}
+
+.portfolio-item__name {
+  font: normal normal 700 18px/22px "Inter", sans-serif;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+  margin: 18px auto 20px;
+}
+
+.portfolio-item__designation,
+.portfolio-item__organization {
+  font: normal normal normal 14px/18px "Inter", sans-serif;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0b283f;
+}
+
+.portfolio-item__designation {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.carousel-indicators {
+  top: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 8px;
+  width: 8px;
+  background: #57acf9;
+  border: 1px solid #57acf9;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 3px solid #57acf9;
+  background: transparent;
+}
+
+.section--get-start {
+  text-align: left;
+}
+
+.section--get-start .button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section--get-start .button-wrapper button {
+  height: 48px;
+}
+
+.section--get-start .btn-primary {
+  margin-right: 32px;
+}
+
+.btn-secondary {
+  background: #eff7ff;
+  border-radius: 6px;
+  color: #57acf9;
+  font: normal normal 500 16px "Inter",sans-serif;
+  border:1px transparent;
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+.btn-secondary:hover {
+  background: #eff7ff;
+  color: #0b283f;
+}
+
+footer {
+  background: #0B283F;
+  padding: 18px 0;
+}
+
+.copyright-text {
+  font: normal normal 500 12px/24px "Inter",sans-serif;
+  text-align: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #FFFFFF;
+}
+
+.social-media {
+  text-align: right;
+}
+
+.social-media a {
+  margin-right: 16px;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+/** 
+ @media queries
+*/
+
+@media screen and (min-width: 1200px) {
+  .custom-container--fluid {
+    width: calc(100% - 140px);
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font: normal normal 800 50px/61px "Inter", sans-serif;
+    font-feature-settings: "salt" on, "liga" off;
+    color: #0b283f;
+  }
+
+  .hero-section {
+    padding: 176px 0 218px 0;
+  }
+}
