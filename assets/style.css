@@ -12,7 +12,7 @@ img {
 }
 
 .navbar {
-  background: #ffffff;
+  background: #0b283f;
   box-shadow: 0px 1px 0px #e5e9f2;
 }
 
@@ -20,18 +20,31 @@ img {
   box-shadow: none;
 }
 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 1);
+}
+
 .custom-container--fluid {
   padding: 6px 16px;
 }
 
 .custom-navbar.navbar-light .navbar-nav .nav-link.nav-link {
-  color: #0b283f;
+  color: #ffffff;
   font: normal normal 500 14px/1.4em "Inter", sans-serif;
+}
+
+.custom-navbar.navbar-light .navbar-nav .nav-link.nav-link:hover {
+  color: #57acf9;
 }
 
 .custom-navbar.navbar-light .navbar-nav .nav-link.active,
 .custom-navbar.navbar-light .navbar-nav .show > .nav-link {
   font-weight: 700;
+  color: #57acf9;
 }
 
 .custom-navbar.navbar-light .navbar-nav .nav-link.btn-primary {
@@ -57,6 +70,11 @@ h1 {
 .hero-section {
   background: url("../assets/img/hero-section.svg") no-repeat right center,
     linear-gradient(180deg, #ffffff 21.84%, #eff7ff 100%);
+}
+
+.hero-section__right {
+  padding: 60px 0;
+  display: none;
 }
 
 .hero-content {
@@ -95,7 +113,7 @@ h2 {
 }
 
 .section--ai {
-  padding: 112px 0 86px;
+  padding: 60px 0;
 }
 
 .section--ai .section__title {
@@ -116,12 +134,13 @@ h2 {
 }
 
 .section__image-wrapper {
-  margin-top: 124px;
+  margin-top: 54px;
 }
 
 .section--manual-ar-process {
   background: #eff7ff;
-  padding-bottom: 216px;
+  position: relative;
+  padding: 76px 0 0;
 }
 
 .secondary-color {
@@ -129,7 +148,7 @@ h2 {
 }
 
 .manual-ar-process-illustration-wrapper {
-  margin: 56px auto 86px;
+  margin: 62px auto 56px;
 }
 
 h3 {
@@ -166,7 +185,7 @@ h3 {
 }
 
 .stepper__indicator {
-  background: #0b283f;
+  background: #57acf9;
   border-radius: 4px;
   font: normal normal 500 18px/22px "Inter", sans-serif;
   text-transform: uppercase;
@@ -183,7 +202,7 @@ h3 {
   position: absolute;
   height: 2px;
   width: 240px;
-  background: #0b283f;
+  background: #57acf9;
   top: 50%;
   margin-left: 16px;
 }
@@ -194,6 +213,7 @@ h3 {
 
 .stepper__title {
   font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .stepper__description {
@@ -207,10 +227,8 @@ h3 {
 
 .section--platform {
   background: #0b283f;
-}
-
-.section--platform__shape-wrapper {
-  background: url("../assets/img/shape.svg") no-repeat;
+  position: relative;
+  padding: 66px 0;
 }
 
 .section--platform .section__image-wrapper {
@@ -394,8 +412,8 @@ h3 {
   background: #eff7ff;
   border-radius: 6px;
   color: #57acf9;
-  font: normal normal 500 16px "Inter",sans-serif;
-  border:1px transparent;
+  font: normal normal 500 16px "Inter", sans-serif;
+  border: 1px transparent;
   padding: 12px 32px;
   font-size: 16px;
 }
@@ -406,15 +424,15 @@ h3 {
 }
 
 footer {
-  background: #0B283F;
+  background: #0b283f;
   padding: 18px 0;
 }
 
 .copyright-text {
-  font: normal normal 500 12px/24px "Inter",sans-serif;
+  font: normal normal 500 12px/24px "Inter", sans-serif;
   text-align: center;
-  font-feature-settings: 'salt' on, 'liga' off;
-  color: #FFFFFF;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
 }
 
 .social-media {
@@ -427,6 +445,37 @@ footer {
 
 .social-media a:last-child {
   margin-right: 0;
+}
+
+.section--shape {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  background: #eff7ff;
+}
+
+.section--shape::before,
+.section--shape::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 150px;
+  background: #0b283f;
+  bottom: 0em;
+  z-index: 100;
+}
+.section--shape::before {
+  right: 50%;
+  transform: skew(0, 8deg);
+}
+
+.section--shape::after {
+  left: 50%;
+  transform: skew(0, -8deg);
+}
+
+.carousel-items-wrapper,.step-wrapper--sm {
+  display: none;
 }
 
 /** 
@@ -452,5 +501,124 @@ footer {
 
   .hero-section {
     padding: 176px 0 218px 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-section {
+    padding: 60px 0 60px;
+    background: linear-gradient(90deg, #ffffff 21.84%, #eff7ff 100%);
+  }
+
+  .hero-section__right {
+    display: block;
+  }
+
+  .stepper-wrapper {
+    display: none;
+  }
+  .step-wrapper--sm {
+    display: block;
+  }
+
+  .stepper {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .stepper:last-child {
+    margin-bottom: 0;
+  }
+
+  .stepper__title {
+    margin-bottom: 8px;
+  }
+
+  .stepper__details,.stepper__description {
+    text-align: left;
+  }
+
+  .stepper__indicator {
+    margin: 0;
+    width: 98px;
+    height: 42px;
+  }
+
+  .stepper__indicator::after {
+    height: 126px;
+    width: 2px;
+    left: 50%;
+    margin-left: 0;
+    top: 86%;
+  }
+
+  .section--ai,.section--stat,.section--get-start {
+    padding: 40px 0;
+  }
+
+  .section--manual-ar-process {
+    padding: 40px 0 40px;
+  }
+
+  .section--get-start .button-wrapper {
+    flex-direction: column;
+  }
+
+  .section--get-start .button-wrapper button {
+    margin: 0 auto 40px;
+  }
+
+  .copyright-text,.social-media  {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .carousel-items-wrapper {
+    display: block;
+  }
+  
+  #carouselIndicators{
+    display: none;
+  }
+
+  .portfolio-item,.portfolio-item__img-wrapper {
+    margin: 0 auto;
+  }
+  .carousel-items-wrapper {
+    margin: 60px auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .hero-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+  }
+
+  .hero-section {
+    background: linear-gradient(90deg, #ffffff 21.84%, #eff7ff 100%);
+  }
+
+  .hero-section__right {
+    display: block;
+  }
+  .section--get-start .button-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-item__img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section--get-start .button-wrapper button {
+    margin-bottom: 16px;
+  }
+
+  .stepper__indicator::after {
+    width: 180px;
   }
 }
